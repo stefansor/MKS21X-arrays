@@ -7,12 +7,21 @@ public class ArrayDemo{
   };
   printArray(booyea);
   }
+
   public static void printArray(int[]ary){
     String s = "{";
     for(int i = 0; i < ary.length; i = i + 1){
       s = s + ary[i] + ",";
     }
     s = s + "}";
-    System.out.print(s);
+    System.out.println(s);
+  }
+
+  public static void printArray(int[][]ary){
+    String rar = "{";
+    for(int i = 0; i < ary.length; i = i + 1){
+      for(int j = 0; j < )
+    }
+
   }
 }
