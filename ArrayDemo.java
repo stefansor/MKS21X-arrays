@@ -57,7 +57,20 @@ public class ArrayDemo{
   }
 
   public static int[][] fill2DCopy(int[][] vals){
-    
+    int[][] copy1 = vals
+    for(int i = 0; i < copy1.length; i = i + 1){
+      if (vals[i] < 0){
+        copy1[i] = 3;
+      }
+      copy1[i] = 1;
+      for(int j = 0; j < vals[i].length; j = j + 1){
+        if(vals[i][j] < 0){
+          copy1[i][j] = 3;
+        }
+        copy1[i][j] = 1;
+      }
+    }
+    return copy1;
   }
 
 
